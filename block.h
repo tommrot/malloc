@@ -6,7 +6,7 @@
 typedef struct Block_header {
     size_t size;    //size for datas, not header's size
     int free;         
-    Block_header *next;
+    struct Block_header *next;   //because compiler has not yet created type Block_header
 } Block_header;
 
 #endif
